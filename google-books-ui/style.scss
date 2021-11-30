@@ -1,0 +1,31 @@
+@import "./partials/palette";
+// $primary_background_col: rgb(31, 73, 53);
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    background-color: $primary_background_col;
+
+    &__h1 {
+        color: white;
+        font-weight: 100;
+        font-size: 50px;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search {
+    height: 50px;
+    width: 20vw;
+}
