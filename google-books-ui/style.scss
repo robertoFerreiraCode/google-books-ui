@@ -1,31 +1,24 @@
+@use "./modules/header.scss";
+@use "./modules/search.scss";
+@use "./modules/results.scss";
 @import "./partials/palette";
-// $primary_background_col: rgb(31, 73, 53);
+
 body {
     margin: 0;
+    // height: 100vh;
     font-family: sans-serif;
-}
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    width: 100vw;
-    background-color: $primary_background_col;
-
-    &__h1 {
-        color: white;
-        font-weight: 100;
-        font-size: 50px;
-    }
+    // background: rgb(22, 22, 22);
 }
 
 .main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     padding: 20px;
-}
-
-.search {
-    height: 50px;
-    width: 20vw;
+    background: linear-gradient(
+        180deg,
+        rgba(116, 236, 178, 1) 0%,
+        $primary_background_col 100%
+    );
 }

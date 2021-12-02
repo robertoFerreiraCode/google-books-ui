@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100vw;
+  background-color: #1f4935;
+}
+.header__h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 50px;
+  text-shadow: 2px 2px 8px black;
+}
+
+/*# sourceMappingURL=header.css.map */

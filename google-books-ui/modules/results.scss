@@ -1,0 +1,47 @@
+@use "./../partials/devices" as media;
+@import "./../partials/palette";
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 100px;
+    @include media.phone {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    @include media.tablet {
+        grid-template-columns: 1fr;
+        padding: 60px;
+    }
+}
+
+.book {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    border: 2px solid black;
+    height: 400px;
+    overflow: hidden;
+
+    &__text-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+        padding: 20px;
+    }
+
+    &__text-section::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+}

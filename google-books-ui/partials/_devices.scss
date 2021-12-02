@@ -1,0 +1,34 @@
+$xs: 576px; //extra small
+$sm: 768px; // small
+$md: 992px; // medium
+$lg: 1200px; // large
+
+@mixin phone {
+    @media only screen and (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $xs + 1px) and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media only screen and (min-width: $sm + 1px) and (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width: $md + 1px) {
+        @content;
+    }
+}
+
+@mixin not-phone {
+    @media only screen and (min-width: $xs + 1px) {
+        @content;
+    }
+}
