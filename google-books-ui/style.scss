@@ -5,9 +5,7 @@
 
 body {
     margin: 0;
-    // height: 100vh;
     font-family: sans-serif;
-    // background: rgb(22, 22, 22);
 }
 
 .main {
@@ -18,7 +16,7 @@ body {
     padding: 20px;
     background: linear-gradient(
         180deg,
-        rgba(116, 236, 178, 1) 0%,
+        $secondary_background_col 0%,
         $primary_background_col 100%
     );
 }
